@@ -8,10 +8,13 @@ public class Product
     {
         Count = 1;
     }
-    public Product(string Name, double costPrice, double salePrice)
+    public Product(string name, double costPrice, double salePrice)
     {
         Count++;
         Id = Count;
+        Name = name;
+        CostPrice = costPrice;
+        SalePrice = salePrice;
     }
     public int Id { get; set; }
     public string Name { get; set; }

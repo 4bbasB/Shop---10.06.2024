@@ -7,7 +7,6 @@ namespace Shop.Business.Implementations;
 
 public class ProductService : IProductService
 {
-
     void IProductService.Create(ProductCreateDto productCreateDto)
     {
         Product product = new Product(productCreateDto.Name, productCreateDto.CostPrice, productCreateDto.SalePrice) { Name = productCreateDto.Name, CostPrice = productCreateDto.CostPrice, SalePrice = productCreateDto.SalePrice};
